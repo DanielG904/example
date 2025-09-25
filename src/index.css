@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  /* primary purple */
+  --color-primary-100: hsl(262 100% 95%);
+  --color-primary-200: hsl(262 100% 85%);
+  --color-primary-300: hsl(262 100% 75%);
+  --color-primary-400: hsl(262 100% 65%);
+  --color-primary-500: hsl(262 100% 57%);
+  --color-primary-600: hsl(262 100% 47%);
+  --color-primary-700: hsl(262 100% 37%);
+  --color-primary-800: hsl(262 100% 27%);
+  --color-primary-900: hsl(262 100% 17%);
+
+  /* secondary red */
+  --color-secondary-100: hsl(9 100% 95%);
+  --color-secondary-200: hsl(9 100% 85%);
+  --color-secondary-300: hsl(9 100% 75%);
+  --color-secondary-400: hsl(9 100% 67%);
+  --color-secondary-500: hsl(9 100% 61%);
+  --color-secondary-600: hsl(9 100% 51%);
+  --color-secondary-700: hsl(9 100% 41%);
+  --color-secondary-800: hsl(9 100% 31%);
+  --color-secondary-900: hsl(9 100% 21%);
+
+  /* fonts */
+  --font-headline: "Mozilla Headline", sans-serif;
+  --font-body: "Mozilla Text", sans-serif;
+}
+
+.container {
+  @apply max-w-[1000px] px-10 mx-auto;
+}
+
+.menu-link {
+  @apply text-yellow-500;
+}
+
+.btn-primary {
+  @apply bg-primary-500 text-white font-bold py-3 px-5;
+}
+
+.btn-secondary {
+  @apply bg-secondary-500 text-black font-bold py-3 px-5;
+}
+
+.radio-choice {
+  @apply p-2 grid gap-3 bg-white grid-cols-[min-content_auto];
+}
+
+.tab {
+  @apply bg-secondary-500 px-2 py-3;
+}
+
+.tab-selected {
+  @apply bg-secondary-400 pt-3 pb-5 px-2;
+  transition-duration: 0.2;
+  transition-property: all;
+}
+
+/* base styling */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-headline);
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+
+  body {
+    font-family: var(--font-body);
+  }
+
+  main {
+    color: var(--color-neutral-800);
+  }
+
+  code {
+    @apply font-bold;
+  }
+
+  pre {
+    @apply bg-neutral-200;
+  }
+}
