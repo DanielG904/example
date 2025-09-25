@@ -6,9 +6,10 @@ A demo of multiple modern practices with React development.
 
 - React Router for the component-based routing
 - Recharts for the weather charts
-- Tailwind for styling - with examples of:
-  - [Theme variables](https://tailwindcss.com/docs/theme) - found in `index.css`
-  -
+- Tailwind for styling - with examples of (found in `index.css`)
+  - [Theme variables](https://tailwindcss.com/docs/theme)
+  - A custom component library pattern (using `@apply`)
+  - Defining global styles using `@layer base`
 - React motion for:
   - the page transition animation
   - the current page indicator
