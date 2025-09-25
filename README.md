@@ -1,4 +1,4 @@
-# Demo app
+# Daniel's demo app
 
 A demo of multiple modern practices with React development.
 
