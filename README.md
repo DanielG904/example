@@ -17,7 +17,7 @@ A demo of multiple modern practices with React development.
 ## How to run it
 
 1. Clone the repository  
-   `git clone https://github.com/DanielG904/examples.git`
+   `git clone https://github.com/DanielG904/example.git`
 2. Install dependencies  
    `npm install`
 3. Start the vite development server  
