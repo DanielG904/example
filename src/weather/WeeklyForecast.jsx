@@ -28,10 +28,10 @@ export default function WeeklyForecast({ days, minTemps, maxTemps }) {
   console.log("data", data);
 
   return (
-    <ResponsiveContainer width={250} height={150}>
+     <ResponsiveContainer aspect={1.5}>
       <LineChart
         data={data}
-        margin={{ right: 10, left: 10, top: 10, bottom: 10 }}
+        // margin={{ right: 10, left: 10, top: 10, bottom: 10 }}
       >
         <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
         <XAxis

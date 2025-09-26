@@ -7,7 +7,7 @@ import { fetchCityData, fetchCityWeather } from "./api/weather.js";
 import DailyForecast from "./weather/DailyForecast.jsx";
 import { motion } from "motion/react";
 
-const cities = ["Sydney", "Wollongong", "Byron Bay"];
+const cities = ["Sydney", "Wollongong", "Byron Bay", "Newcastle"];
 
 export default function WeatherPage() {
   const [cityData, setCityData] = useState(null);
@@ -59,7 +59,7 @@ export default function WeatherPage() {
           </WeatherTabs>
         </>
       )}
-      <div className="bg-white flex ">
+      <div className="bg-white flex flex-wrap">
         {selectedCityWeather ? (
           <>
             <WeatherBlock title="Today">
