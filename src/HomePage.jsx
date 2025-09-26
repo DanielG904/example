@@ -42,7 +42,7 @@ export default function HomePage() {
       <br />
       <hr className="border-t border-gray-300" />
 
-      <h2 className="mt-3">Example</h2>
+      <h2 className="mt-3 pb-2">Example</h2>
       <div class=" bg-[#1e1e1e] text-sm font-mono rounded-lg p-4 overflow-x-auto">
         <pre class="bg-[#1e1e1e]">
           <code>
