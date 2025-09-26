@@ -52,7 +52,6 @@ export default function HomePage() {
               <span className="text-blue-300">
                 BrowserRouter<span className="text-white">,</span> Routes
                 <span className="text-white">,</span> Route
-                <span className="text-white">,</span>
               </span>{" "}
               {"}"}{" "}
             </span>
