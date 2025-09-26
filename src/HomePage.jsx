@@ -1,5 +1,16 @@
 import { motion } from "motion/react";
 
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
 export default function HomePage() {
   return (
     <motion.div
@@ -37,13 +48,85 @@ export default function HomePage() {
           <code>
             <span class="text-purple-400">import</span>{" "}
             <span className="text-yellow-400">
-              {"{"} <span className="text-blue-400">browser</span> {"}"}{" "}
+              {"{"}{" "}
+              <span className="text-blue-300">
+                BrowserRouter<span className="text-white">,</span> Routes
+                <span className="text-white">,</span> Route
+                <span className="text-white">,</span>
+              </span>{" "}
+              {"}"}{" "}
             </span>
             <span class="text-purple-400">from</span>{" "}
             <span class="text-orange-300">
               'react-router-dom'<span className="text-white">;</span>
             </span>
             <br />
+            <span class="text-purple-400">import</span>{" "}
+            <span className="text-blue-300">HomePage</span>{" "}
+            <span class="text-purple-400">from</span>{" "}
+            <span class="text-orange-300">
+              './HomePage'<span className="text-white">;</span>
+            </span>
+            <br />
+            <span class="text-purple-400">import</span>{" "}
+            <span className="text-blue-300">AboutPage</span>{" "}
+            <span class="text-purple-400">from</span>{" "}
+            <span class="text-orange-300">
+              './AboutPage'<span className="text-white">;</span>
+            </span>
+            <br />
+            <br />
+            <span className="text-blue-400">function</span>{" "}
+            <span className="text-yellow-200">App()</span>{" "}
+            <span className="text-yellow-200">{"{"}</span>
+            <br /> <span class="text-purple-400"> return (</span>
+            <br />{" "}
+            <span className="text-green-500">
+              <span className="text-gray-300/50">{"   <"}</span>BrowserRouter
+              <span className="text-gray-300/50">{">"}</span>
+            </span>
+            <br />{" "}
+            <span className="text-green-500">
+              <span className="text-gray-300/50">{"     <"}</span>Route{" "}
+              <span className="text-blue-300">path</span>
+              <span className="text-gray-300/50">=</span>
+              <span className="text-orange-300">"/"</span>{" "}
+              <span className="text-blue-300">element</span>
+              <span className="text-gray-300/50">=</span>
+              <span className="text-blue-600">{"{"}</span>
+              <span className="text-gray-300/50">{"<"}</span>
+              <span>HomePage</span>
+              <span className="text-gray-300/50">{"/>"}</span>
+              <span className="text-blue-600">{"}"}</span>
+              <span className="text-gray-300/50">{" />"}</span>
+            </span>
+            <br />{" "}
+            <span className="text-green-500">
+              <span className="text-gray-300/50">{"     <"}</span>Route{" "}
+              <span className="text-blue-300">path</span>
+              <span className="text-gray-300/50">=</span>
+              <span className="text-orange-300">"/about"</span>{" "}
+              <span className="text-blue-300">element</span>
+              <span className="text-gray-300/50">=</span>
+              <span className="text-blue-600">{"{"}</span>
+              <span className="text-gray-300/50">{"<"}</span>
+              <span>AboutPage</span>
+              <span className="text-gray-300/50">{"/>"}</span>
+              <span className="text-blue-600">{"}"}</span>
+              <span className="text-gray-300/50">{" />"}</span>
+            </span>
+            <br />{" "}
+            <span className="text-green-500">
+              <span className="text-gray-300/50">{"   </"}</span>BrowserRouter
+              <span className="text-gray-300/50">{">"}</span>
+            </span>
+            <br />{" "}
+            <span class="text-purple-400">
+              {" "}
+              )<span className="text-white">;</span>
+            </span>
+            <br />
+            <span className="text-yellow-400">{"}"}</span>
           </code>
         </pre>
       </div>
