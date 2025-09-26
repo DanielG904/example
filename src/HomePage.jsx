@@ -125,7 +125,7 @@ export default function HomePage() {
               )<span className="text-white">;</span>
             </span>
             <br />
-            <span className="text-yellow-400">{"}"}</span>
+            <span className="text-yellow-200">{"}"}</span>
           </code>
         </pre>
       </div>
